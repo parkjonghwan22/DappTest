@@ -25,6 +25,8 @@ export class AuthService {
                 name: "no name",
                 userImg: `${client}/default-image.png`,
                 address,
+                hasCollection: false,
+                verified : false,
                 ...userData
             });
             return newUser;
