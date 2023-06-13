@@ -3,7 +3,7 @@ import Image from "next/image";
 import { RootLayout } from "@components/layout/layout";
 
 const Home: NextPage = () => {
-  console.log("Hello1");
+  console.log("Hello3");
   return <RootLayout>{/* <Listing /> */}</RootLayout>;
 };
 
