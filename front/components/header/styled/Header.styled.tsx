@@ -64,7 +64,7 @@ interface ButtonProps extends StyledProps {
 }
 
 export const Button = ({ onClick, backgroundColor, color, fontSize, children }: ButtonProps) => {
-  const buttonStyled: string = `inline-flex items-center order-0 py-1.5 px-3 mr-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0`;
+  const buttonStyled: string = `inline-flex items-center order-0 py-1.5 px-3 mr-3 focus:outline-none hover:bg-gray-400 rounded text-base mt-4 md:mt-0 transition duration-300 ease-in-out`;
 
   let bgColor = backgroundColors[backgroundColor ? backgroundColor : "gray"];
   let txtSize = textSizes[fontSize ? fontSize : "sm"];

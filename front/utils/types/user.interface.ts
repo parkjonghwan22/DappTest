@@ -3,4 +3,6 @@ export interface UserType {
   name: string;
   userImg: string;
   createdAt: string;
+  hasCollection: boolean;
+  verified: boolean;
 }

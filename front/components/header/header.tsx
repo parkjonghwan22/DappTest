@@ -1,13 +1,12 @@
 import { HeaderWrap, HeaderUserInfo, HeaderContainer, TitleContainer, NavLink, Button, NavContainer } from "./styled/Header.styled";
 import { Icon } from "@iconify/react";
-import { Modal } from "@components/modal/Modal";
+import { Modal } from "@components/common/modal/Modal";
 import { useEffect, useState } from "react";
 import ConnectWallet from "@components/sign/connect";
 import { useAccount, useDisconnect } from "wagmi";
 import { DropDownBtn } from "@components/dropdown/dropdown";
 import request from "@utils/request"
-import { LoadingSpinner } from "@components/loading/loading";
-import Link from "next/link";
+import { LoadingSpinner } from "@components/common/loading/loading";
 import { UserType } from "@utils/types/user.interface";
 
 

@@ -7,6 +7,7 @@ import { useTheme } from "next-themes";
 export const DarkModeToggle = () => {
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
+    
 
     return (
         <label className="relative inline-flex items-center mr-5 cursor-pointer">
