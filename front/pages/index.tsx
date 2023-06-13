@@ -1,14 +1,10 @@
-import type { NextPage } from 'next'
-import Image from 'next/image'
-import { RootLayout } from '@components/layout/layout'
+import type { NextPage } from "next";
+import Image from "next/image";
+import { RootLayout } from "@components/layout/layout";
 
 const Home: NextPage = () => {
+  console.log("Hello");
+  return <RootLayout>{/* <Listing /> */}</RootLayout>;
+};
 
-  return (
-    <RootLayout>
-      {/* <Listing /> */}
-    </RootLayout>  
-  )
-}
-
-export default Home
+export default Home;
