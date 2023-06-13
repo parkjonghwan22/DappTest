@@ -15,6 +15,12 @@ export class User {
 
     @Prop()
     userImg: string
+
+    @Prop()
+    hasCollection: boolean
+
+    @Prop()
+    verified: boolean
 }
 
 export const UserSchema = SchemaFactory.createForClass(User)
