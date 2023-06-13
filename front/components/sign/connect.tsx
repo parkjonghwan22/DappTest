@@ -1,5 +1,5 @@
 // import useWeb3 from "@hooks/useWeb3"
-import { LoadingSpinner } from "@components/loading/loading";
+import { LoadingSpinner } from "@components/common/loading/loading";
 import { ConnectWrapper, LoginText, RecommendText, WalletList, WalletItem, WalletName } from "./styled/Connect.styled";
 import { useAccount, useConnect, useDisconnect } from 'wagmi'
 

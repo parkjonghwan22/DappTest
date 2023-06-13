@@ -21,7 +21,9 @@
     ],
     "baseUrl": "./",
     "paths": {
+      "@contracts/*": ["contracts/*"],
       "@components/*": ["components/*"],
+      "@common/*": ["components/common/*"],
       "@pages/*": ["pages/*"],
       "@hooks/*": ["hooks/*"],
       "@utils/*": ["utils/*"],

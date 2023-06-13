@@ -1,39 +1,10 @@
 import { RootLayout } from "@components/layout/layout"
-import request from "@utils/request";
-import { useEffect, useState } from "react";
-import { useAccount } from "wagmi";
-import { UserType } from "@utils/types/user.interface"
+import { useSign } from "@hooks/useSign";
 
 
 const MyPage = () => {
-    const { address, isConnected } = useAccount()
-    const [isDefinitelyConnected, setIsDefinitelyConnected] = useState(false);
-    const [isLoading, setIsLoading] = useState(true)
-    const [user, setUser] = useState<UserType | null>(null)
+    const { user } = useSign()
 
-    const getUser = async () => {
-        try {
-            const { data } = await request.post("auth/sign", {
-                address: address
-            });
-            if (data.address) setUser(data)
-            setIsLoading(false)
-        } catch (error) {
-            console.log(error);
-        }
-    };
-    console.log(user)
-
-    useEffect(() => {
-        if (isConnected) {
-            setIsDefinitelyConnected(true);
-            getUser()
-        } else {
-            setIsDefinitelyConnected(false);
-        }
-    }, [address]);
-
-    if (isLoading) return null
     return (
         <RootLayout>
             {user && <div>
